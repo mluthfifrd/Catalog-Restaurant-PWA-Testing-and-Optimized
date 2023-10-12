@@ -19,4 +19,6 @@ Scenario('liking one resto and cancel like one resto', ({ I }) => {
 
   I.seeElement('#likeButton')
   I.click('#likeButton')
+
+  I.amOnPage('/#/favorite')
 })
