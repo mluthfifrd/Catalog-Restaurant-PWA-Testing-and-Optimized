@@ -21,4 +21,5 @@ Scenario('liking one resto and cancel like one resto', ({ I }) => {
   I.click('#likeButton')
 
   I.amOnPage('/#/favorite')
+  I.dontSee('.resto-item')
 })
