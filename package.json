@@ -6,7 +6,7 @@
   "scripts": {
     "start": "http-server dist -p 8080",
     "start-dev": "webpack-dev-server --config webpack.dev.js --stats-error-details",
-    "build": "webpack --config webpack.prod.js --stats-error-details",
+    "build": "webpack --config webpack.prod.js --stats-error-details && node sharp.js",
     "build-image": "node sharp.js",
     "test": "jest",
     "test:watch": "jest --watchAll",
