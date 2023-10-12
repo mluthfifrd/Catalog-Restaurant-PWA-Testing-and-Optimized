@@ -1,0 +1,59 @@
+@media screen and (min-width: 768px)
+  .app-bar
+    grid-template-columns: 1fr auto
+    padding: 8px 32px
+
+    .app-bar__brand h1
+      font-size: 1.5em
+
+    .app-bar__menu
+      display: none
+
+    .app-bar__navigation
+      position: static
+      width: 100%
+
+    .app-bar__navigation ul li
+      display: inline-block
+
+    .app-bar__navigation ul li a
+      display: inline-block
+      width: 120px
+      text-align: center
+      margin: 0
+
+    .restos
+      grid-template-columns: repeat(1, 1fr)
+
+    .resto__info__item
+      display: grid
+      grid-template-columns: repeat(1, 1fr)
+      gap: 15px
+
+@media screen and (max-width: 700px)
+  .restos
+    grid-template-columns: repeat(1, 1fr) !important
+
+@media screen and (max-width: 800px)
+  .restos
+    grid-template-columns: repeat(2, 1fr)
+
+@media screen and (min-width: 850px)
+  .app-bar .app-bar__brand h1
+    font-size: 2em
+
+  .restos
+    grid-template-columns: repeat(3, 1fr)
+
+@media screen and (min-width: 1200px)
+  .restos
+    grid-template-columns: repeat(4, 1fr)
+
+@media screen and (max-width: 850px)
+  .resto__info__item
+    display: grid
+    grid-template-columns: repeat(1, 1fr) !important
+    gap: 15px
+
+  .review-item
+    width: 80% !important

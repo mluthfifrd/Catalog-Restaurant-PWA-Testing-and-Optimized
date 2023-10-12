@@ -1,0 +1,161 @@
+.resto
+  margin: 10px auto 20px auto
+  width: 100%
+  max-width: 1200px
+  display: grid
+  grid-template-columns: 1fr
+  gap: 18px 16px
+  border: 3px dashed #a47d3b
+  padding: 10px
+  box-sizing: border-box
+  border-radius: 10px
+
+  .resto__title
+    width: fit-content
+    padding: 10px
+    color: #fff5e4
+    margin: 0 auto
+    background-color: #a47d3b
+    border-radius: 20px 0 20px 0
+
+  .resto__poster
+    width: 100%
+    max-width: 700px
+    margin: 0 auto
+    border-radius: 10px
+
+  .resto__info
+    padding: 8px 0
+    margin: 8px 0
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2)
+    overflow: hidden
+    border-radius: 10px
+    background-color: #a47d3b
+    color: #fff5e4
+    font-size: 1.1em
+
+    .resto__info__description
+      border: 1px solid #eee
+      width: fit-content
+      margin: 0 auto
+      padding: 10px
+      border-radius: 20px 0 20px 0
+      background-color: #fff5e4
+      color: #8a621d
+      margin-bottom: 10px
+
+    h3
+      font-size: 1.3em
+
+    h4
+      margin: 8px 0
+
+  .resto__overview
+    h3
+      font-size: 1.3em
+      border: 1px solid #eee
+      width: fit-content
+      margin: 10px auto
+      padding: 10px
+      border-radius: 20px 0 20px 0
+      background-color: #fff5e4
+      color: #8a621d
+
+  .resto__info__item
+    display: grid
+    grid-template-columns: repeat(2, 1fr)
+    gap: 15px
+
+    .text-repeat
+      display: flex
+      align-items: center
+      justify-content: center
+      gap: 5px
+      flex-direction: column
+
+    .wrap
+      border: 1px solid #eee
+      width: 80%
+      margin: 0 auto
+      padding: 10px
+      border-radius: 10px 10px 10px 10px
+      background-color: #fff5e4
+      color: #8a621d
+      font-size: 1.1em
+
+  .resto__overview
+    border: 1px solid #eee
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2)
+    overflow: hidden
+    border-radius: 10px
+    background-color: #a47d3b
+    color: #fff5e4
+
+    h3
+      padding: 10px
+
+    .review-item
+      margin: 0 auto 20px auto
+      color: #8a621d
+      background-color: #fff5e4
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2)
+      overflow: hidden
+      padding: 10px
+      width: 50%
+      border-radius: 10px
+
+      .nameAndDate
+        padding-bottom: 10px
+
+.resto-customer-review
+  padding: 10px
+  margin-bottom: 20px
+  border: 3px dashed #a47d3b
+  box-sizing: border-box
+  border-radius: 10px
+
+  .reviewForm
+    background-color: #a47d3b
+    padding: 10px
+    border-radius: 10px
+
+  .add__review__description
+    font-size: 1.1em
+    border: 1px solid #eee
+    width: fit-content
+    margin: 10px auto
+    padding: 10px
+    border-radius: 20px 0 20px 0
+    background-color: #fff5e4
+    color: #8a621d
+
+  label
+    display: block
+    margin-top: 10px
+    font-weight: bold
+    color: #fff5e4
+
+  input[type="text"],
+  textarea
+    width: 80%
+    padding: 15px
+    margin-top: 5px
+    border: 1px solid #ccc
+    border-radius: 5px
+    box-sizing: border-box
+
+  input[type="submit"]
+    background-color: #8a621d
+    color: #fff
+    padding: 13px 20px
+    border: none
+    cursor: pointer
+    margin-top: 10px
+    border-radius: 5px
+    font-size: 1.1em
+
+    &:hover
+      opacity: 0.8
+
+    &:active
+      transform: translateY(2px)
